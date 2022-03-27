@@ -45,5 +45,7 @@ That second round of heavy success had such a heavy and distinct dropoff, I woul
 With more data to back up the trend, campaigns with goals below $5,000 genuinely tend to be distinctly more likely to be successful, rather than the 50/50 split for some slightly larger amounts. 
 
 - What are some limitations of this dataset?
+Currency unconverted, strange outliers (goals of $10 are successful), a lack of follow-up after a successful campaign was the play produced or did they not raise enough capital, 
 
 - What are some other possible tables and/or graphs that we could create?
+Backers & average donation in conjunction with goal. Are campaigns seeing huge numbers of donors or are they seeing a few donors with big bucks that might skew some of the data?
