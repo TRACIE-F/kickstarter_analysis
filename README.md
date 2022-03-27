@@ -17,11 +17,11 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 
 
 ### Challenges and Difficulties Encountered
-####Theater Outcomes Based on Launch Date
+###Theater Outcomes Based on Launch Date
 With the "Theater Outcomes Based On Launch Date" chart, I encountered minor challenges in setting up my pivot table. Initially, the data order was "Canceled," "Successful," and then "Failed." This made my line chart a little more difficult to follow at a glance as the key was in a different stacked order than the data on the graph. A little bit of Googling helped me re-arrange the columns without disrupting the data. 
 A challenge I anticipated, but did not run into with this chart, was ensuring the timeline was using a row label that was months rather than quarters. Other tables automatically defaulted the timeline to quarters, and I was able to correct this in "Field Settings."
 
-####Outcomes based on Goal
+###Outcomes based on Goal
 The "Outcomes Based on Goal" chart was much more of a challenge. First and foremost, determining how to set the parameters between two sets of numbers (ex. 1000 to 4999) presented some challenges. Google sorted those challenges out quickly. Sorting out the "COUNTIFS" formula was a matter of trial and error once I figured out how to pull the columns I needed. I tested my first formula (less than 1000), and then went back to the main "Kickstarter" sheet to utilize filters and do a rough count to feel more confident in my results.
 
 Fewer 9s
@@ -43,7 +43,7 @@ Another challenge I encountered was a result of sheer forgetfulness. As soon as 
 2. May and June look like the best potential months for launching a campaign. There are significantly more successful campaigns seeing success in this timeframe, with a slight dip in failed campaigns launched in June.
 
 - What can you conclude about the Outcomes based on Goals?
-![Outcomes_vs_Goals] (https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
+![Outcomes_vs_Goals](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 
 The two most distinct areas of success appear to be less than $5,000 and $35,000 to $39,999. Therefore:
 That second round of heavy success had such a heavy and distinct dropoff, I would guess (and verify in the table) there weren't a significant number of overall campaigns, which is skewing the data.
