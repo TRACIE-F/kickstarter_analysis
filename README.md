@@ -22,7 +22,12 @@ With the "Theater Outcomes Based On Launch Date" chart, I encountered minor chal
 A challenge I anticipated, but did not run into with this chart, was ensuring the timeline was using a row label that was months rather than quarters. Other tables automatically defaulted the timeline to quarters, and I was able to correct this in "Field Settings."
 
 The "Outcomes Based on Goal" chart was much more of a challenge. First and foremost, determining how to set the parameters between two sets of numbers (ex. 1000 to 4999) presented some challenges. Google sorted those challenges out quickly. Sorting out the "COUNTIFS" formula was a matter of trial and error once I figured out how to pull the columns I needed. I tested my first formula (less than 1000), and then went back to the main "Kickstarter" sheet to utilize filters and do a rough count to feel more confident in my results.
+
+![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
 To make the formula easier to type out, I utilized some critical thinking skills. I then realized early on typing whole numbers at least felt easier than multiple 9s, and chose to make my formulas start with "greater than or equal to" the bottom number, and "less than" the bottom range for the next row.
+
+![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
+![Unlocked_Formula]()
 Another challenge I encountered was a result of sheer forgetfulness. As soon as I determined the proper formula for the first row, I copied and pasted it over into the second row to begin converting "successful" to "failed" in my formula. Unfortunately, I had forgotten to use $ to help preserve the columns I wanted to pull data from, and spent a good amount of time pondering why I was getting a significant number of zero values. I manually adjusted for a while, then remembered to add a $ before transferring over to the "canceled" column.
 
 ---
