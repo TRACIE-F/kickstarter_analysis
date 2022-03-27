@@ -18,10 +18,9 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 
 ### Challenges and Difficulties Encountered
 ### Theater Outcomes Based on Launch Date
+![Chart_Order](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Chart_Order.png)
 With the "Theater Outcomes Based On Launch Date" chart, I encountered minor challenges in setting up my pivot table. Initially, the data order was "Canceled," "Successful," and then "Failed." This made my line chart a little more difficult to follow at a glance as the key was in a different stacked order than the data on the graph. A little bit of Googling helped me re-arrange the columns without disrupting the data. 
-
-![Chart_Setup]()
-A challenge I anticipated, but did not run into with this chart, was ensuring the timeline was using a row label that was months rather than quarters. Other tables automatically defaulted the timeline to quarters, and I was able to correct this in "Field Settings."
+A challenge I anticipated, but did not run into with this chart, was ensuring the timeline was using a row label that was months rather than quarters. Other tables automatically defaulted the timeline to quarters, and I was able to correct this with assistance from [Pryor Learning](https://www.pryor.com/blog/grouping-excel-pivottable-data-by-month/).
 
 ### Outcomes based on Goal
 The "Outcomes Based on Goal" chart was much more of a challenge. First and foremost, determining how to set the parameters between two sets of numbers (ex. 1000 to 4999) presented some challenges. Google sorted those challenges out quickly. Sorting out the "COUNTIFS" formula was a matter of trial and error once I figured out how to pull the columns I needed. I tested my first formula (less than 1000), and then went back to the main "Kickstarter" sheet to utilize filters and do a rough count to feel more confident in my results.
