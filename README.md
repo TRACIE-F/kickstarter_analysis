@@ -10,7 +10,7 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
-[Theater_Outcomes_vs_Launch](???)
+[Theater_Outcomes_vs_Launch](kickstarter_analysis/Resources/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 
