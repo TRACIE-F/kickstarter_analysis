@@ -14,7 +14,7 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 
 
 ### Analysis of Outcomes Based on Goals
-https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png
+![Outcomes_vs_Goals] (https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 
 
 ### Challenges and Difficulties Encountered
