@@ -1,4 +1,4 @@
-# Kickstarting with Excel
+# Kickstarter Analysis for *Fever*
 
 ## Overview of Project
 The following data and analysis were compiled to support a successful fundraiser for production of *Fever*. 
@@ -12,16 +12,38 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 ### Analysis of Outcomes Based on Launch Date
 ![Theater_Outcomes_vs_Launch](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
 
+
 ### Analysis of Outcomes Based on Goals
+![Outcomes_vs_Goals] (https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
+
+
 
 ### Challenges and Difficulties Encountered
+With the "Theater Outcomes Based On Launch Date" chart, I encountered minor challenges in setting up my pivot table. Initially, the data order was "Canceled," "Successful," and then "Failed." This made my line chart a little more difficult to follow at a glance as the key was in a different stacked order than the data on the graph. A little bit of Googling helped me re-arrange the columns without disrupting the data. 
+A challenge I anticipated, but did not run into with this chart, was ensuring the timeline was using a row label that was months rather than quarters. Other tables automatically defaulted the timeline to quarters, and I was able to correct this in "Field Settings."
+
+The "Outcomes Based on Goal" chart was much more of a challenge. First and foremost, determining how to set the parameters between two sets of numbers (ex. 1000 to 4999) presented some challenges. Google sorted those challenges out quickly. Sorting out the "COUNTIFS" formula was a matter of trial and error once I figured out how to pull the columns I needed. I tested my first formula (less than 1000), and then went back to the main "Kickstarter" sheet to utilize filters and do a rough count to feel more confident in my results.
+To make the formula easier to type out, I utilized some critical thinking skills. I then realized early on typing whole numbers at least felt easier than multiple 9s, and chose to make my formulas start with "greater than or equal to" the bottom number, and "less than" the bottom range for the next row.
+Another challenge I encountered was a result of sheer forgetfulness. As soon as I determined the proper formula for the first row, I copied and pasted it over into the second row to begin converting "successful" to "failed" in my formula. Unfortunately, I had forgotten to use $ to help preserve the columns I wanted to pull data from, and spent a good amount of time pondering why I was getting a significant number of zero values. I manually adjusted for a while, then remembered to add a $ before transferring over to the "canceled" column.
 
 ---
 ## Results
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
+![Theater_Outcomes_vs_Launch](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
+
+1. Fundraising around December and January seem to be the worst time for success. I would assume the global popularity of Christmas would contribute heavily. Competing for everyone's attention and money are incredibly difficult at this time of the year.
+2. May and June look like the best potential months for launching a campaign. There are significantly more successful campaigns seeing success in this timeframe, with a slight dip in failed campaigns launched in June.
 
 - What can you conclude about the Outcomes based on Goals?
+![Outcomes_vs_Goals] (https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
+
+The two most distinct areas of success appear to be less than $5,000 and $35,000 to $39,999. Therefore:
+That second round of heavy success had such a heavy and distinct dropoff, I would guess (and verify in the table) there weren't a significant number of overall campaigns, which is skewing the data.
+
+![Skewed_Data] ()
+
+With more data to back up the trend, campaigns with goals below $5,000 genuinely tend to be distinctly more likely to be successful, rather than the 50/50 split for some slightly larger amounts. 
 
 - What are some limitations of this dataset?
 
