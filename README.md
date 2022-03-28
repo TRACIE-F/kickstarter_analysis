@@ -12,10 +12,11 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 Determining the outcomes of a theater kickstarter based on the launch date began with cleaning up the original data.
 
    **Dates**
-![Date_Conversion](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Date_Conversion.png)
 The original data contained Epoch dates, which I had never encountered before. It's safe to say that most idividuals will have a much easier time interpreting data utilizing standard dates.
-![Years](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Years.png)
+![Date_Conversion](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Date_Conversion.png)
+
 I also adedd a "Years" column, which allowed for a filter on the pivot table mentioned below.
+![Years](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Years.png)
 
    **Split category**
 ![Category_Split](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Category_Split.png)
@@ -29,11 +30,13 @@ From this pivot table, I created a line chart to show any trends in the data, he
 
 ### Analysis of Outcomes Based on Goals
 To determine the success of goals, I began with the COUNTIFS formula and selected the pertinent data to have counted. 
-![Chart]()
+![Skewed_Data](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Skewed_Data.png)
+
 Below is pictured te formula for canceled kickstarters between $20,000 and $24,999 within the subcategory of "plays." I also chose to limit the data to US plays with the concern that other currencies might skew the data (ex. 4000 GBP is quite different from 4,000 USD).
 ![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
+
 I then added a calculation to determine the percentage of failed, successful, and canceled kickstarter campaigns occurred within a goal range.
-![Percentage]()
+![Percentage](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Percentage.png)
 
 The reulting vizualization is a line chart tracking the percentage of successful, failed, and canceled kickstarter campaigns for plays within specified ranges.
 ![Outcomes_vs_Goals](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
@@ -49,13 +52,13 @@ A challenge I anticipated, but did not run into with this chart, was ensuring th
 The "Outcomes Based on Goal" chart was much more of a challenge. First and foremost, determining how to set the parameters between two sets of numbers (ex. 1000 to 4999) presented some challenges. Google sorted those challenges out quickly. Sorting out the "COUNTIFS" formula was a matter of trial and error once I figured out how to pull the columns I needed. I tested my first formula (less than 1000), and then went back to the main "Kickstarter" sheet to utilize filters and do a rough count to feel more confident in my results.
 
 **Fewer 9s**
-![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
 To make the formula easier to type out, I utilized some critical thinking skills. I then realized early on typing whole numbers at least felt easier than multiple 9s, and chose to make my formulas start with "greater than or equal to" the bottom number, and "less than" the bottom range for the next row.
+![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
 
 **Locking Columns**
+Another challenge I encountered was a result of sheer forgetfulness. As soon as I determined the proper formula for the first row, I copied and pasted it over into the second row to begin converting "successful" to "failed" in my formula. Unfortunately, I had forgotten to use $ to help preserve the columns I wanted to pull data from, and spent a good amount of time pondering why I was getting a significant number of zero values. I manually adjusted for a while, then remembered to add a $ before transferring over to the "canceled" column.
 ![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
 ![Unlocked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Unlocked_Formula.png)
-Another challenge I encountered was a result of sheer forgetfulness. As soon as I determined the proper formula for the first row, I copied and pasted it over into the second row to begin converting "successful" to "failed" in my formula. Unfortunately, I had forgotten to use $ to help preserve the columns I wanted to pull data from, and spent a good amount of time pondering why I was getting a significant number of zero values. I manually adjusted for a while, then remembered to add a $ before transferring over to the "canceled" column.
 
 ---
 ## Results
@@ -71,14 +74,18 @@ Another challenge I encountered was a result of sheer forgetfulness. As soon as 
 
 The two most distinct areas of success appear to be less than $5,000 and $35,000 to $39,999. Therefore:
 That second round of heavy success had such a heavy and distinct dropoff, I would guess (and verify in the table) there weren't a significant number of overall campaigns, which is skewing the data.
-
-![Skewed_Data](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Skewed_Data.png)
+![Skewed_Data_Highlights](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Skewed_Data_Highlights.png)
 
 With more data to back up the trend, campaigns with goals below $5,000 genuinely tend to be distinctly more likely to be successful, rather than the 50/50 split for some slightly larger amounts. 
 
 - What are some limitations of this dataset?
-Currency unconverted, strange outliers (goals of $10 are successful), a lack of follow-up after a successful campaign was the play produced or did they not raise enough capital, 
+One of the main limitations I noted was the outliers. One campaign had a fundraising goal of $10, which it exceeded. Therefore, it's a "successful" campaign. There were a handful of strange outliers that undoubtedly skew the data story. 
+
+For the US data, it would have been interesting to track where the campaigns launched regionally, and overlay it with something like income levels. I suspect drilling down into the local market might offer additional insights.
+
+A deeper layer of data I found myself curious about was not just the success of the kickstarter, but the overall financial viability of the production. If *Fever* set a goal of $5,000 and reached that fundraising goal, they technically did not raise enough capital for the production to happen - Louise had a budget of $10,000. Does the dataset allow for tracking a single project with multiple kickstarters? Do projects with multiple kickstarters do progressively worse?
 
 - What are some other possible tables and/or graphs that we could create?
-Backers & average donation in conjunction with goal. Are campaigns seeing huge numbers of donors or are they seeing a few donors with big bucks that might skew some of the data?
-Lengh of campaign - does campaign length impact anything?
+The additional tables I would create from this dataset are:
+1. Number of backers & average donation in conjunction with goal. Are campaigns seeing huge numbers of donors or are they seeing a few donors with big bucks that might skew some of the data?
+2. Lengh of campaign. Does campaign length impact anything?
