@@ -9,24 +9,34 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
-![Theater_Outcomes_vs_Launch](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
 Determining the outcomes of a theater kickstarter based on the launch date began with cleaning up the original data.
 
-1. Dates
-![]()
+   **Dates**
+![Date_Conversion](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Date_Conversion.png)
 The original data contained Epoch dates, which I had never encountered before. It's safe to say that most idividuals will have a much easier time interpreting data utilizing standard dates.
+![Years](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Years.png)
+I also adedd a "Years" column, which allowed for a filter on the pivot table mentioned below.
 
-2. Split category
-![]()
+   **Split category**
+![Category_Split](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Category_Split.png)
 Splitting up the parent category and subcategory allowed for more nuanced data sorting, and for the purpsose of this specific analysis, allowed me to filter by the "theater" parent category.
 
-With this cleaned data, I created a pivot table (pictured below) which counted the number of successful, failed, and canceled kickstarter campaigns sorted by the month they launched. 
+With this cleaned data, I created a pivot table (pictured below) which counted the number of successful, failed, and canceled kickstarter campaigns sorted by the month they launched. Rows held the month of campaign luanch and columns held the outcomes and their count per month. The chart was filtered to only show the parent category of "Theater," with an option to filter by year.
+![Pivot_Table]()
+
+From this pivot table, I created a line chart to show any trends in the data, helping to determine if there are truly any months to launch a campaign with a higher likelihood of success or months to avoid due to low success rates of others.
+![Theater_Outcomes_vs_Launch](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
+To determine the success of goals, I began with the COUNTIFS formula and selected the pertinent data to have counted. 
+![Chart]()
+Below is pictured te formula for canceled kickstarters between $20,000 and $24,999 within the subcategory of "plays." I also chose to limit the data to US plays with the concern that other currencies might skew the data (ex. 4000 GBP is quite different from 4,000 USD).
+![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
+I then added a calculation to determine the percentage of failed, successful, and canceled kickstarter campaigns occurred within a goal range.
+![Percentage]()
+
+The reulting vizualization is a line chart tracking the percentage of successful, failed, and canceled kickstarter campaigns for plays within specified ranges.
 ![Outcomes_vs_Goals](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
-This graph also began with a data cleanup, building on the work stated above.
-1. Years, to sort any trends from year to year.
-![]()
 
 ### Challenges and Difficulties Encountered
 ### Theater Outcomes Based on Launch Date
