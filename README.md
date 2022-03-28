@@ -11,19 +11,19 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 ### Analysis of Outcomes Based on Launch Date
 Determining the outcomes of a theater kickstarter based on the launch date began with cleaning up the original data.
 
-   **Dates**
+**Dates**
 The original data contained Epoch dates, which I had never encountered before. It's safe to say that most idividuals will have a much easier time interpreting data utilizing standard dates.
 ![Date_Conversion](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Date_Conversion.png)
 
 I also adedd a "Years" column, which allowed for a filter on the pivot table mentioned below.
 ![Years](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Years.png)
 
-   **Split category**
-![Category_Split](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Category_Split.png)
+**Split category**
 Splitting up the parent category and subcategory allowed for more nuanced data sorting, and for the purpsose of this specific analysis, allowed me to filter by the "theater" parent category.
+![Category_Split](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Category_Split.png)
 
 With this cleaned data, I created a pivot table (pictured below) which counted the number of successful, failed, and canceled kickstarter campaigns sorted by the month they launched. Rows held the month of campaign luanch and columns held the outcomes and their count per month. The chart was filtered to only show the parent category of "Theater," with an option to filter by year.
-![Pivot_Table]()
+![Pivot_Table](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Pivot_Table.png)
 
 From this pivot table, I created a line chart to show any trends in the data, helping to determine if there are truly any months to launch a campaign with a higher likelihood of success or months to avoid due to low success rates of others.
 ![Theater_Outcomes_vs_Launch](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
