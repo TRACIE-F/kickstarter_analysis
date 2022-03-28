@@ -12,17 +12,17 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 Determining the outcomes of a theater kickstarter based on the launch date began with cleaning up the original data.
 
 **Dates**
-The original data contained Epoch dates, which I had never encountered before. It's safe to say that most idividuals will have a much easier time interpreting data utilizing standard dates.
+The original data contained Epoch dates, which I had never encountered before. It's safe to say that most individuals will have a much easier time interpreting data utilizing standard dates.
 ![Date_Conversion](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Date_Conversion.png)
 
-I also adedd a "Years" column, which allowed for a filter on the pivot table mentioned below.
+I also added a "Years" column, which allowed for a filter on the pivot table mentioned below.
 ![Years](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Years.png)
 
 **Split category**
-Splitting up the parent category and subcategory allowed for more nuanced data sorting, and for the purpsose of this specific analysis, allowed me to filter by the "theater" parent category.
+Splitting up the parent category and subcategory allowed for more nuanced data sorting, and for the purpose of this specific analysis, allowed me to filter by the "theater" parent category.
 ![Category_Split](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Category_Split.png)
 
-With this cleaned data, I created a pivot table (pictured below) which counted the number of successful, failed, and canceled kickstarter campaigns sorted by the month they launched. Rows held the month of campaign luanch and columns held the outcomes and their count per month. The chart was filtered to only show the parent category of "Theater," with an option to filter by year.
+With this cleaned data, I created a pivot table (pictured below) which counted the number of successful, failed, and canceled kickstarter campaigns sorted by the month they launched. Rows held the month of campaign launch and columns held the outcomes and their count per month. The chart was filtered to only show the parent category of "Theater," with an option to filter by year.
 ![Pivot_Table](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Pivot_Table.png)
 
 From this pivot table, I created a line chart to show any trends in the data, helping to determine if there are truly any months to launch a campaign with a higher likelihood of success or months to avoid due to low success rates of others.
@@ -32,13 +32,13 @@ From this pivot table, I created a line chart to show any trends in the data, he
 To determine the success of goals, I began with the COUNTIFS formula and selected the pertinent data to have counted. 
 ![Skewed_Data](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Skewed_Data.png)
 
-Below is pictured te formula for canceled kickstarters between $20,000 and $24,999 within the subcategory of "plays." I also chose to limit the data to US plays with the concern that other currencies might skew the data (ex. 4000 GBP is quite different from 4,000 USD).
+Below is pictured the formula for canceled kickstarters between $20,000 and $24,999 within the subcategory of "plays." I also chose to limit the data to US plays with the concern that other currencies might skew the data (ex. 4000 GBP is quite different from 4,000 USD).
 ![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
 
 I then added a calculation to determine the percentage of failed, successful, and canceled kickstarter campaigns occurred within a goal range.
 ![Percentage](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Percentage.png)
 
-The reulting vizualization is a line chart tracking the percentage of successful, failed, and canceled kickstarter campaigns for plays within specified ranges.
+The resulting visualization is a line chart tracking the percentage of successful, failed, and canceled kickstarter campaigns for plays within specified ranges.
 ![Outcomes_vs_Goals](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 
 ### Challenges and Difficulties Encountered
@@ -57,8 +57,8 @@ To make the formula easier to type out, I utilized some critical thinking skills
 
 **Locking Columns**
 Another challenge I encountered was a result of sheer forgetfulness. As soon as I determined the proper formula for the first row, I copied and pasted it over into the second row to begin converting "successful" to "failed" in my formula. Unfortunately, I had forgotten to use $ to help preserve the columns I wanted to pull data from, and spent a good amount of time pondering why I was getting a significant number of zero values. I manually adjusted for a while, then remembered to add a $ before transferring over to the "canceled" column.
-![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
 ![Unlocked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Unlocked_Formula.png)
+![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
 
 ---
 ## Results
@@ -73,7 +73,7 @@ Another challenge I encountered was a result of sheer forgetfulness. As soon as 
 ![Outcomes_vs_Goals](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 
 The two most distinct areas of success appear to be less than $5,000 and $35,000 to $39,999. Therefore:
-That second round of heavy success had such a heavy and distinct dropoff, I would guess (and verify in the table) there weren't a significant number of overall campaigns, which is skewing the data.
+That second round of heavy success had such a heavy and distinct drop-off, I would guess (and verify in the table) there weren't a significant number of overall campaigns, which is skewing the data.
 ![Skewed_Data_Highlights](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Skewed_Data_Highlights.png)
 
 With more data to back up the trend, campaigns with goals below $5,000 genuinely tend to be distinctly more likely to be successful, rather than the 50/50 split for some slightly larger amounts. 
