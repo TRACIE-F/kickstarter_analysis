@@ -13,7 +13,7 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 Determining the outcomes of a theater kickstarter based on the launch date began with cleaning up the original data.
 
 1. Dates
-![]()
+![Date_Conversion](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Date_Conversion.png)
 The original data contained Epoch dates, which I had never encountered before. It's safe to say that most idividuals will have a much easier time interpreting data utilizing standard dates.
 
 2. Split category
