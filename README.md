@@ -17,7 +17,7 @@ Determining the outcomes of a theater kickstarter based on the launch date began
 The original data contained Epoch dates, which I had never encountered before. It's safe to say that most idividuals will have a much easier time interpreting data utilizing standard dates.
 
 2. Split category
-![]()
+![Category_Split](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Category_Split.png)
 Splitting up the parent category and subcategory allowed for more nuanced data sorting, and for the purpsose of this specific analysis, allowed me to filter by the "theater" parent category.
 
 With this cleaned data, I created a pivot table (pictured below) which counted the number of successful, failed, and canceled kickstarter campaigns sorted by the month they launched. 
