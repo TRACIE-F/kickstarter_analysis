@@ -14,7 +14,7 @@ Determining the outcomes of a theater kickstarter based on the launch date began
    **Dates**
 ![Date_Conversion](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Date_Conversion.png)
 The original data contained Epoch dates, which I had never encountered before. It's safe to say that most idividuals will have a much easier time interpreting data utilizing standard dates.
-![Years]()
+![Years](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Years.png)
 I also adedd a "Years" column, which allowed for a filter on the pivot table mentioned below.
 
    **Split category**
