@@ -10,11 +10,23 @@ In an effort to support additional kickstarters for the production of *Fever*, w
 
 ### Analysis of Outcomes Based on Launch Date
 ![Theater_Outcomes_vs_Launch](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
+Determining the outcomes of a theater kickstarter based on the launch date began with cleaning up the original data.
 
+1. Dates
+![]()
+The original data contained Epoch dates, which I had never encountered before. It's safe to say that most idividuals will have a much easier time interpreting data utilizing standard dates.
+
+2. Split category
+![]()
+Splitting up the parent category and subcategory allowed for more nuanced data sorting, and for the purpsose of this specific analysis, allowed me to filter by the "theater" parent category.
+
+With this cleaned data, I created a pivot table (pictured below) which counted the number of successful, failed, and canceled kickstarter campaigns sorted by the month they launched. 
 
 ### Analysis of Outcomes Based on Goals
 ![Outcomes_vs_Goals](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
-
+This graph also began with a data cleanup, building on the work stated above.
+1. Years, to sort any trends from year to year.
+![]()
 
 ### Challenges and Difficulties Encountered
 ### Theater Outcomes Based on Launch Date
@@ -50,7 +62,7 @@ Another challenge I encountered was a result of sheer forgetfulness. As soon as 
 The two most distinct areas of success appear to be less than $5,000 and $35,000 to $39,999. Therefore:
 That second round of heavy success had such a heavy and distinct dropoff, I would guess (and verify in the table) there weren't a significant number of overall campaigns, which is skewing the data.
 
-![Skewed_Data] ()
+![Skewed_Data](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Skewed_Data.png)
 
 With more data to back up the trend, campaigns with goals below $5,000 genuinely tend to be distinctly more likely to be successful, rather than the 50/50 split for some slightly larger amounts. 
 
@@ -59,3 +71,4 @@ Currency unconverted, strange outliers (goals of $10 are successful), a lack of 
 
 - What are some other possible tables and/or graphs that we could create?
 Backers & average donation in conjunction with goal. Are campaigns seeing huge numbers of donors or are they seeing a few donors with big bucks that might skew some of the data?
+Lengh of campaign - does campaign length impact anything?
