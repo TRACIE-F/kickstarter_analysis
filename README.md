@@ -32,7 +32,7 @@ From this pivot table, I created a line chart to show any trends in the data, he
 To determine the success of goals, I began with the COUNTIFS formula and selected the pertinent data to have counted. 
 ![Skewed_Data](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Skewed_Data.png)
 
-Below is pictured the formula for canceled kickstarters between $20,000 and $24,999 within the subcategory of "plays." I also chose to limit the data to US plays with the concern that other currencies might skew the data (ex. 4000 GBP is quite different from 4,000 USD).
+Below is pictured the formula for canceled kickstarters between $20,000 and $24,999 within the subcategory of "plays."
 ![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
 
 I then added a calculation to determine the percentage of failed, successful, and canceled kickstarter campaigns occurred within a goal range.
@@ -72,7 +72,7 @@ Another challenge I encountered was a result of sheer forgetfulness. As soon as 
 - What can you conclude about the Outcomes based on Goals?
 ![Outcomes_vs_Goals](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 
-The two most distinct areas of success appear to be less than $5,000 and $35,000 to $39,999. Therefore:
+The two most distinct areas of success appear to be less than $5,000 and $35,000 to $44,999. Therefore:
 That second round of heavy success had such a heavy and distinct drop-off, I would guess (and verify in the table) there weren't a significant number of overall campaigns, which is skewing the data.
 ![Skewed_Data_Highlights](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Skewed_Data_Highlights.png)
 
@@ -84,6 +84,10 @@ One of the main limitations I noted was the outliers. One campaign had a fundrai
 For the US data, it would have been interesting to track where the campaigns launched regionally, and overlay it with something like income levels. I suspect drilling down into the local market might offer additional insights.
 
 A deeper layer of data I found myself curious about was not just the success of the kickstarter, but the overall financial viability of the production. If *Fever* set a goal of $5,000 and reached that fundraising goal, they technically did not raise enough capital for the production to happen - Louise had a budget of $10,000. Does the dataset allow for tracking a single project with multiple kickstarters? Do projects with multiple kickstarters do progressively worse?
+
+The currency could pose an issue when comparing kickstarter goals and success rates. For example, 4,000 GPB is quite different from 4,000 USD. Comparing without a conversion feels like it could skew the data.
+
+When looking at Outcomes Based on Goals
 
 - What are some other possible tables and/or graphs that we could create?
 The additional tables I would create from this dataset are:
