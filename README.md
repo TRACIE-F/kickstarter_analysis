@@ -54,7 +54,7 @@ The "Outcomes Based on Goal" chart was much more of a challenge. First and forem
 
 **Fewer 9s**
 To make the formula easier to type out, I utilized some critical thinking skills. I then realized early on typing whole numbers at least felt easier than multiple 9s, and chose to make my formulas start with "greater than or equal to" the bottom number, and "less than" the bottom range for the next row.
-![Locked_Formula](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Locked%20Formula.png)
+![Fewer_9s](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Fewer_9s.png)
 
 **Locking Columns**
 Another challenge I encountered was a result of sheer forgetfulness. As soon as I determined the proper formula for the first row, I copied and pasted it over into the second row to begin converting "successful" to "failed" in my formula. Unfortunately, I had forgotten to use $ to help preserve the columns I wanted to pull data from, and spent a good amount of time pondering why I was getting a significant number of zero values. I manually adjusted for a while, then remembered to add a $ before transferring over to the "canceled" column.
