@@ -39,6 +39,7 @@ I then added a calculation to determine the percentage of failed, successful, an
 ![Percentage](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Percentage.png)
 
 The resulting visualization is a line chart tracking the percentage of successful, failed, and canceled kickstarter campaigns for plays within specified ranges.
+
 ![Outcomes_vs_Goals](https://github.com/TRACIE-F/kickstarter_analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 
 ### Challenges and Difficulties Encountered
